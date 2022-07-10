@@ -1,0 +1,12 @@
+for i,v in pairs(game.Players:GetChildren()) do
+    if v ~= game.Players.LocalPlayer then
+Humr.CFrame = v.Character.HumanoidRootPart.CFrame
+wait(.3)
+local args = {
+    [1] = "Slash"
+}
+
+game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer(unpack(args))
+wait(.3)
+end
+end
