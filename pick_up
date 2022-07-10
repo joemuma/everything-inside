@@ -1,0 +1,198 @@
+getgenv().x = true
+while getgenv().x == true do
+if game.workspace:FindFirstChild("Diamond") then
+    Humr.CFrame = game:GetService("Workspace").Diamond.Primary.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace.Diamond,
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Ruby Boots") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Boots").MainWeld.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Ruby Boots"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Ruby Helmet") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Helmet").MainWeld.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Ruby Helmet"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Ruby Legs") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Legs").MainWeld.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Ruby Legs"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Ruby Body") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Body").MainWeld.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Ruby Body"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Diamond Boots") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Boots").MainWeld.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Diamond Boots"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Diamond Helmet") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Helmet").MainWeld.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Diamond Helmet"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Diamond Legs") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Legs").MainWeld.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Diamond Legs"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Diamond Body") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Body").MainWeld.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Diamond Body"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Ruby Harvester") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Harvester").Part.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Ruby Harvester"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Ruby Sword") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Sword").Extents.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Ruby Sword"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Ruby") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby").Primary.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Ruby"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Diamond Harvester") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Harvester").Part.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Diamond Harvester"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Diamond Bag") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Bag").Handle.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Diamond Bag"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Ruby Bag") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Bag").Handle.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Ruby Bag"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+ wait(.1)
+end
+if game.workspace:FindFirstChild("Unrefined Ruby") then
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Bag").Handle.CFrame
+    wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Unrefined Ruby"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+wait(.1)
+end
+if game:GetService("Workspace"):FindFirstChild("Unrefined Diamond") then
+  Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Bag").Handle.CFrame
+   wait(.1)
+local args = {
+    [1] = workspace:FindFirstChild("Unrefined Diamond"),
+    [2] = "Pickup"
+}
+
+game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
+wait(.1)
+end
+wait()
+end
+
+
+
+
+
+
+
