@@ -1,4 +1,4 @@
-for i,v in pairs(game.Players:GetChildren()) do
+for i,v in pairs(game.Players:GetPlayers()) do
     if v ~= game.Players.LocalPlayer then
 Humr.CFrame = v.Character.HumanoidRootPart.CFrame
 wait(.3)
