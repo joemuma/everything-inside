@@ -2,7 +2,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "Raze Series X";
-    Text = "Toggle AirWalk With X";
+    Text = "Toggle AirWalk With Z";
     Duration = 10;
     --Callback here
     Button1 = "Thanks";
@@ -10,7 +10,7 @@ CoreGui:SetCore("SendNotification", {
 })
 
 local testsquadAIR    = {
-   Airwalk    = Enum.KeyCode.X;
+   Airwalk    = Enum.KeyCode.Z;
 }
 
 local ContextAction = Game:GetService("ContextActionService")
