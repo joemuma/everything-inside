@@ -47,4 +47,3 @@ if v.Character:FindFirstChild("Gun") then
     end
 
 end
-end
