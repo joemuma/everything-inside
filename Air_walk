@@ -1,3 +1,6 @@
+local testsquadAIR    = {
+   Airwalk    = Enum.KeyCode.X;
+}
 
 local ContextAction = Game:GetService("ContextActionService")
 local RunService    = Game:GetService("RunService")
