@@ -1,3 +1,14 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "RAZE Series X";
+    Text = "Click G to Toggle Noclip";
+    Duration = 10;
+    --Callback here
+    Button1 = "Thanks";
+    Button2 = "You Welcome";
+})
+
 local nckey = "g";
 local nclip = false;
 local lp = game.Players.LocalPlayer
