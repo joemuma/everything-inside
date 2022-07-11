@@ -2,7 +2,7 @@ print("K!11.$4URA$")
 
 _, Dis, Github ="main.git"
 
-,nil,nil;getgenv().MaxDistance=15;KillAuraActive=true;
+,nil,nil;getgenv().MaxDistance=15;
 
 function GetClosestTorso()
    local closest
