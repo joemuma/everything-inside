@@ -1,50 +1,50 @@
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Backpack:FindFirstChild("Gun") then
-local CoreGui = game:GetService("StarterGui")
+    if v.Backpack:FindFirstChild("Gun") then
+        local CoreGui = game:GetService("StarterGui")
+        CoreGui:SetCore("SendNotification", {
+            Title = "Sherrif";
+            Text = v.Name;
+            Duration = 10; 
+            Icon = game.Players:GetUserThumbnailAsync(v.UserId, "HeadShot", "Size420x420");
+            Button1 = "Thanks";
+        })
+    end
 
-CoreGui:SetCore("SendNotification", {
-    Title = "Sheriff";
-    Text = (v.Name);
-    Duration = 10;
-    Button1 = "Thanks";
-})
-
-end
 wait()
 if v.Backpack:FindFirstChild("Knife") then
-local CoreGui = game:GetService("StarterGui")
+        local CoreGui = game:GetService("StarterGui")
+        CoreGui:SetCore("SendNotification", {
+            Title = "Murder";
+            Text = v.Name;
+            Duration = 10; 
+            Icon = game.Players:GetUserThumbnailAsync(v.UserId, "HeadShot", "Size420x420");
+            Button1 = "Thanks";
+        })
+    end
 
-CoreGui:SetCore("SendNotification", {
-    Title = "Murder";
-    Text = (v.Name);
-    Duration = 10;
-    Button1 = "Thanks";
-})
-
-
-end
 wait()
 if v.Character:FindFirstChild("Knife") then
-local CoreGui = game:GetService("StarterGui")
+        local CoreGui = game:GetService("StarterGui")
+        CoreGui:SetCore("SendNotification", {
+            Title = "Murder";
+            Text = v.Name;
+            Duration = 10; 
+            Icon = game.Players:GetUserThumbnailAsync(v.UserId, "HeadShot", "Size420x420");
+            Button1 = "Thanks";
+        })
+    end
 
-CoreGui:SetCore("SendNotification", {
-    Title = "Murder";
-    Text = (v.Name);
-    Duration = 10;
-    Button1 = "Thanks";
-})
-
-end
 wait()
 if v.Character:FindFirstChild("Gun") then
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Sheriff";
-    Text = (v.Name);
-    Duration = 10;
-    Button1 = "Thanks";
-})
+        local CoreGui = game:GetService("StarterGui")
+        CoreGui:SetCore("SendNotification", {
+            Title = "Sherrif";
+            Text = v.Name;
+            Duration = 10; 
+            Icon = game.Players:GetUserThumbnailAsync(v.UserId, "HeadShot", "Size420x420");
+            Button1 = "Thanks";
+        })
+    end
 
 end
 end
