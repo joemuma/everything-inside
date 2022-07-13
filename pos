@@ -9,4 +9,9 @@ local function SavePos(POS)
 
 function LoadPos()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (SavedPosition)
+
+repeat
+wait()
+until
+game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 end;
