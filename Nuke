@@ -20,7 +20,7 @@ if game.Players:FindFirstChild(txt1).Character:FindFirstChild("Humanoid").Health
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     local args = {
-    [1] = "Died, so u will too",
+    [1] = "Died, so Everyone else will too",
     [2] = "All"
 }
 
