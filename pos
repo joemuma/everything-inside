@@ -1,0 +1,12 @@
+POS = game.Players.LocalPlayer.Character.Head.CFrame
+
+local function SavePos(POS)
+    pcall(function()
+        POS = game.Players.LocalPlayer.Character.Head.CFrame;
+    end);
+        SavedPosition = POS;
+    end;
+
+function LoadPos()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (SavedPosition)
+end;
