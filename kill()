@@ -1,5 +1,9 @@
 function kill()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/joemuma/everything-inside/main/prison-all-weapons"))()
+local args = {
+    [1] = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
 wait(1)
 workspace.Remote.TeamEvent:FireServer("Medium stone grey")
 wait(.1)
