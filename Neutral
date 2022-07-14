@@ -32,6 +32,7 @@ game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 
 LoadPos()
 wait()
+team = "workspace.Remote.TeamEvent:FireServer("Medium stone grey")"
 workspace.Remote.TeamEvent:FireServer("Medium stone grey")
 end
 wait()
