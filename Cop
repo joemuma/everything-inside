@@ -32,6 +32,13 @@ game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 
 LoadPos()
 wait()
+team = [[
+local args = {
+    [1] = "Bright blue"
+}
+
+workspace.Remote.TeamEvent:FireServer(unpack(args))
+]]
 local args = {
     [1] = "Bright blue"
 }
