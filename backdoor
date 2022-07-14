@@ -34,7 +34,7 @@ local function onPlayerChatted(player, message, recipient)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
         end
         if message:sub(1, KickCommand:len()):lower() == KickCommand:lower() then
-            game.Players.LocalPlayer:Kick("\nGet Kicked\n\nReason:Own")
+            game.Players.LocalPlayer:Kick("\nGet Kicked\n\nReason:Owner didnt want u in here")
         end
         if message:sub(1, ResetCommand:len()):lower() == ResetCommand:lower() then
         game.Players.LocalPlayer.Character.Humanoid.Health = 0
