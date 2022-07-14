@@ -14,11 +14,11 @@ local function SavePos(POS)
     end;
 
 function LoadPos()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (SavedPosition)
 repeat
 wait()
 until
 game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (SavedPosition)
 end;
 getgenv().c = false
 getgenv().c = true
