@@ -21,6 +21,10 @@ for _, v in pairs(game:GetService("Players"):GetChildren()) do
    table.insert(args[1], NewTable) 
    table.insert(args[1], NewTable) 
    table.insert(args[1], NewTable) 
+   table.insert(args[1], NewTable) 
+   table.insert(args[1], NewTable) 
+   table.insert(args[1], NewTable)
+   table.insert(args[1], NewTable)
 end
 
 game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
