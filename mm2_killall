@@ -2,12 +2,14 @@ local Humr = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
 for i,v in pairs(game.Players:GetPlayers()) do
     if v ~= game.Players.LocalPlayer then
 Humr.CFrame = v.Character.HumanoidRootPart.CFrame
-wait(.3)
+wait(.1)
+for i=1,5 do
 local args = {
     [1] = "Slash"
 }
 
 game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer(unpack(args))
+end
 wait(.3)
 end
 end
