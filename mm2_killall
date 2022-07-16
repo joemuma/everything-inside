@@ -9,6 +9,7 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer(unpack(args))
+wait()
 end
 wait(.3)
 end
