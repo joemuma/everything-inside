@@ -1,0 +1,43 @@
+print("K!11.$4URA$")
+
+_, Dis, Github ="main.git"
+
+,nil,nil;getgenv().MaxDistance=13;getgenv().KillAuraActive=true;
+
+function GetClosestTorso()
+   local closest
+   local plrtorso = game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+   for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+       if v.Character and v ~= game:GetService("Players").LocalPlayer then
+           local torso = v.Character:FindFirstChild("HumanoidRootPart")
+           if torso and (closest == nil or (torso.Position - plrtorso.Position).magnitude < (closest.Position - plrtorso.Position).magnitude) then
+                if (torso.Position - plrtorso.Position).magnitude <= getgenv().MaxDistance then
+                   closest = torso
+                end
+           end
+       end
+   end
+   wait()
+   return closest
+end
+
+function HitPlayer()
+    local Closest = GetClosestTorso()
+    if Closest ~= nil then
+        local Player = game:GetService("Players"):GetPlayerFromCharacter(Closest.Parent)
+    
+        local args = {
+            [1] = Player.Character.Humanoid,
+            [2] = 0,
+            [3] = 0
+        }
+        
+        game:GetService("Players").LocalPlayer.Character.HitEvent:FireServer(unpack(args)) 
+    end
+    
+end
+
+while getgenv().KillAuraActive == true do
+   HitPlayer()
+   wait() 
+end
