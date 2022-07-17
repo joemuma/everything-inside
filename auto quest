@@ -1,0 +1,58 @@
+        local Humr = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+        Humr.CFrame = game:GetService("Workspace").AREA51.Outside.Hangar.Right["Zombie Morph"].TheButton.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.SecretPath1.Reward.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.SecretPath2.Reward.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.SecretPath3.Reward.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.SecretPath4.Reward.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.SecretPath5.Reward.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.SecretPath6.Reward.CFrame
+        wait()
+
+local function getguns()
+for i,v in pairs(game:GetService("Workspace").Weapons:GetChildren()) do
+Humr.CFrame = v.Hitbox.CFrame
+wait()
+fireproximityprompt(v.Hitbox.ProximityPrompt)
+wait(.1)
+end
+end
+local function papguns()
+for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+            if v:IsA("Tool") then
+            if v.Name ~= "Landmine" then
+            if v.Name ~= "Energy" then
+            if v.Name ~= "Hookshot" then
+               local args = {
+                    [1] = v.Name
+                }
+                game:GetService("ReplicatedStorage"):FindFirstChild("Remote Functions"):FindFirstChild("PAP Weapon"):InvokeServer(unpack(args))
+                game:GetService("ReplicatedStorage"):FindFirstChild("Remote Events").PAPFinished:FireServer() wait ()
+            end
+            end
+            end
+            end
+            end
+end
+getguns()
+wait(.1)
+Humr.CFrame = game:GetService("Workspace").AREA51.YellowBedRoom.Buro.Paper.CFrame
+wait()
+papguns()
+wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.MeetingRoom.DeadGuy.Paper.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.RadioactiveArea.Floor1.Paper.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.PlantRoom["Box of Shells"].Box.CFrame
+        wait(.1)
+        Humr.CFrame = game:GetService("Workspace").AREA51.RadioactiveArea.GiantZombieRoom.GiantZombieEngine.Close.Door2.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.ExecutionRoom.Door.Door.Open.CFrame
+        wait()
+        Humr.CFrame = game:GetService("Workspace").AREA51.AlienExit.Reward.CFrame
