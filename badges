@@ -1,0 +1,20 @@
+local Humr = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+Humr.CFrame = game:GetService("Workspace").AREA51.Badges.UltimateSecret.Platform.CFrame
+wait(.1)
+Humr.CFrame = game:GetService("Workspace").AREA51.Badges.HelpfulKillers.Platform.CFrame
+wait(.1)
+Humr.CFrame = game:GetService("Workspace").AREA51.Badges.TheWayOut.Platform.CFrame
+wait(.1)
+Humr.CFrame = game:GetService("Workspace").AREA51.Badges.AtomicBomb.Platform.CFrame
+for i,v in pairs(game:GetService("Workspace").AREA51.Soldiers.WatchtowerSoldiers:GetChildren()) do
+    if v.Soldier.IsBored.Value == true then
+Humr.CFrame = v.Soldier.Head.CFrame
+wait()
+local args = {
+    [1] = v.Soldier.RobloxDialogue
+}
+game:GetService("ReplicatedStorage").RobloxDialogue.Remotes.DialogueRequested:FireServer(unpack(args))
+wait()
+game:GetService("ReplicatedStorage").RobloxDialogue.Remotes.DialogueUserEnded:FireServer()
+end
+end
