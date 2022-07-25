@@ -1,7 +1,0 @@
-    local Humr = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-for i,v in pairs(game:GetService("Workspace").Weapons:GetChildren()) do
-Humr.CFrame = v.Hitbox.CFrame
-wait()
-fireproximityprompt(v.Hitbox.ProximityPrompt)
-wait()
-end
