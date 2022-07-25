@@ -1,5 +1,6 @@
-getgenv().x = true
-while getgenv().x == true do
+local Humr = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+pickup = true
+while pickup == true do
 if game.workspace:FindFirstChild("Diamond") then
     Humr.CFrame = game:GetService("Workspace").Diamond.Primary.CFrame
     wait(.1)
@@ -166,7 +167,7 @@ game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireS
  wait(.1)
 end
 if game.workspace:FindFirstChild("Unrefined Ruby") then
-    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Bag").Handle.CFrame
+    Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Unrefined Ruby").PrimaryPart.CFrame
     wait(.1)
 local args = {
     [1] = workspace:FindFirstChild("Unrefined Ruby"),
@@ -177,7 +178,7 @@ game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireS
 wait(.1)
 end
 if game:GetService("Workspace"):FindFirstChild("Unrefined Diamond") then
-  Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Bag").Handle.CFrame
+  Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Unrefined Diamond").PrimaryPart.CFrame
    wait(.1)
 local args = {
     [1] = workspace:FindFirstChild("Unrefined Diamond"),
@@ -189,10 +190,3 @@ wait(.1)
 end
 wait()
 end
-
-
-
-
-
-
-
