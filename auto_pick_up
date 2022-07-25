@@ -1,7 +1,18 @@
+POS = game.Players.LocalPlayer.Character.Head.CFrame
+local function SavePos(POS)
+    pcall(function()
+        POS = game.Players.LocalPlayer.Character.Head.CFrame;
+    end);
+        SavedPosition = POS;
+    end;
+function LoadPos()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (SavedPosition)
+end;
 local Humr = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
 pickup = true
 while pickup == true do
 if game.workspace:FindFirstChild("Diamond") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace").Diamond.Primary.CFrame
     wait(.1)
 local args = {
@@ -11,8 +22,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Ruby Boots") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Boots").MainWeld.CFrame
     wait(.1)
 local args = {
@@ -22,8 +35,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Ruby Helmet") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Helmet").MainWeld.CFrame
     wait(.1)
 local args = {
@@ -33,8 +48,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Ruby Legs") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Legs").MainWeld.CFrame
     wait(.1)
 local args = {
@@ -44,8 +61,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Ruby Body") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Body").MainWeld.CFrame
     wait(.1)
 local args = {
@@ -55,8 +74,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Diamond Boots") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Boots").MainWeld.CFrame
     wait(.1)
 local args = {
@@ -66,8 +87,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Diamond Helmet") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Helmet").MainWeld.CFrame
     wait(.1)
 local args = {
@@ -77,8 +100,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Diamond Legs") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Legs").MainWeld.CFrame
     wait(.1)
 local args = {
@@ -88,8 +113,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Diamond Body") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Body").MainWeld.CFrame
     wait(.1)
 local args = {
@@ -99,8 +126,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Ruby Harvester") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Harvester").Part.CFrame
     wait(.1)
 local args = {
@@ -110,8 +139,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Ruby Sword") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Sword").Extents.CFrame
     wait(.1)
 local args = {
@@ -121,8 +152,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Ruby") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby").Primary.CFrame
     wait(.1)
 local args = {
@@ -132,8 +165,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Diamond Harvester") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Harvester").Part.CFrame
     wait(.1)
 local args = {
@@ -143,8 +178,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Diamond Bag") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Diamond Bag").Handle.CFrame
     wait(.1)
 local args = {
@@ -154,8 +191,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Ruby Bag") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Ruby Bag").Handle.CFrame
     wait(.1)
 local args = {
@@ -165,8 +204,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
  wait(.1)
+ LoadPos()
 end
 if game.workspace:FindFirstChild("Unrefined Ruby") then
+    SavePos()
     Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Unrefined Ruby").PrimaryPart.CFrame
     wait(.1)
 local args = {
@@ -176,8 +217,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
 wait(.1)
+LoadPos()
 end
 if game:GetService("Workspace"):FindFirstChild("Unrefined Diamond") then
+    SavePos()
   Humr.CFrame = game:GetService("Workspace"):FindFirstChild("Unrefined Diamond").PrimaryPart.CFrame
    wait(.1)
 local args = {
@@ -187,6 +230,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").References.Comm.Events.ItemInteracted:FireServer(unpack(args))
 wait(.1)
+LoadPos()
 end
 wait()
 end
