@@ -17,7 +17,7 @@ getgenv().c = false
 getgenv().c = true
 while getgenv().c == true do
 if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
-SavePos()
+    SavePos()
 wait(.1)
 local args = {
     [1] = game:GetService("Players").LocalPlayer,
@@ -32,11 +32,6 @@ game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 
 LoadPos()
 wait()
-    local args = {
-    [1] = game:GetService("Players").LocalPlayer,
-}
-
-workspace.Remote.loadchar:InvokeServer(unpack(args))
 end
 wait()
 end
